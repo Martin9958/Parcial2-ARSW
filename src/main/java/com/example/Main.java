@@ -16,6 +16,8 @@
 
 package com.example;
 
+import com.example.services.WheatherService;
+import com.example.services.impl.WeatherApp;
 import static javax.measure.unit.SI.KILOGRAM;
 import javax.measure.quantity.Mass;
 import org.jscience.physics.model.RelativisticModel;
@@ -23,6 +25,7 @@ import org.jscience.physics.amount.Amount;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import java.net.URL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -39,9 +42,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Map;
 
-@Controller
+
 @SpringBootApplication
-public class Main {
+public class Main {   
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);

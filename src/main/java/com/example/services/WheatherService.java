@@ -5,11 +5,19 @@
  */
 package com.example.services;
 
+import java.io.IOException;
+
 /**
  *
  * @author 2124519
  */
 public interface WheatherService {
-    
-    
+    /**
+     * 
+     * @param Name
+     * @return
+     * @throws IOException 
+     */
+    public StringBuffer getCity(String city) throws IOException;
+        
 }
